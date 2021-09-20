@@ -1,0 +1,112 @@
+[
+    {
+        "nombre": "Medicina General",
+        "servicios": "Tratamiento médico, Cirugía menor, Vitaminoterapia Endovenosa, Terapia Respiratoria",
+        "imagen": "../imagenes/medicina-general.jpg"
+    },
+    {
+        "nombre": "Medicina Interna",
+        "servicios": "Atención del adulto mayor, Control de Diabetes Mellitus, Control de Hipertensión Arterial",
+        "imagen": "../imagenes/medicina-interna.jpg"
+    },
+    {
+        "nombre": "Pediatría",
+        "servicios": "Control del niño sano y del adolescente, Control prenatal, Promoción de la lactancia materna",
+        "imagen": "../imagenes/pediatria.jpg"
+    },
+    {
+        "nombre": "Psiquiatría",
+        "servicios": "Psiquiatría infanto-juvenil y de adultos, Psicoterapia individual y familiar",
+        "imagen": "../imagenes/psiquiatria.jpg"
+    },
+    {
+        "nombre": "Neurología",
+        "servicios": "Diagnóstico y tratamiento de las enfermedades del cerebro y la médula espinal, Cefaleas, migrañas, epilepsia, enfermedades cerebrovasculares, enfermedad de Parkinson",
+        "imagen": "../imagenes/neurologia.jpg"
+    },
+    {
+        "nombre": "Ginecología y Obstetricia",
+        "servicios": "Control ginecológico, Cirugía ginecológica, Control prenatal, Cesáreas, Planificación familiar",
+        "imagen": "../imagenes/ginecologia.jpg"
+    },
+    {
+        "nombre": "Psicología",
+        "servicios": "Certificado de salud mental, Intervención específica en relaciones de pareja., Eventos traumáticos, Modificación de conductas, Depresión",
+        "imagen": "../imagenes/psicologia.jpg"
+    },
+    {
+        "nombre": "Dermatología",
+        "servicios": "Revisión de Nevus (lunares), acné, dermatitis, piel atípica y psoriasis, eccema, verrugas, infecciones de la piel y mucosas",
+        "imagen": "../imagenes/dermatologia.jpg"
+    },
+    {
+        "nombre": "Gastroenterología",
+        "servicios": "Enfermedades del trato digestivo: gastritis, colon irritable, hígado, vesícula y vías biliares, páncreas, prevención de cáncer de esófago, estómago y colon",
+        "imagen": "../imagenes/gastroenterologia.jpg"
+    },
+    {
+        "nombre": "Traumatología",
+        "servicios": "Fracturas, Luxaciones,lesiones de hombro, codo, manos, caderas, tobillos y pies",
+        "imagen": "../imagenes/traumatologia.jpg"
+    },
+    {
+        "nombre": "Cardiología",
+        "servicios": "Control de patologías cardiovasculares, hipertensión en el embarazo, pacientes con marcapasos, arritmias cardíacas, realización de electrocardiograma informado, colocación de mapa y Holter ",
+        "imagen": "../imagenes/cardiologia.jpg"
+    },
+    {
+        "nombre": "Nutrición",
+        "servicios": "Educación nutricional infantil, Trastornos alimenticios, Tratamiento de obesidad, Planes alimenticios",
+        "imagen": "../imagenes/nutricion.jpg"
+    },
+    {
+        "nombre": "Nefrología",
+        "servicios": "Patologías del riñón, infección del tracto urinario, prevención y manejo de la enfermedad renal crónica",
+        "imagen": "../imagenes/nefrologia.jpg"
+    },
+    {
+        "nombre": "Estética",
+        "servicios": "Masoterapia: masajes anti-estres, descontracturantes, reductores, vacunterapia",
+        "imagen": "../imagenes/estetica.jpg"
+    },
+    {
+        "nombre": "Oftalmología",
+        "servicios": "Agudeza visual, fondo de ojo,tonometría ",
+        "imagen": "../imagenes/oftalmologia.jpg"
+    },
+    {
+        "nombre": "Mastología",
+        "servicios": "Estudio integral de la mama,prevención y tratamiento del cáncer de mama",
+        "imagen": "../imagenes/mastologia.jpg"
+    },
+    {
+        "nombre": "Salud Ocupacional",
+        "servicios": "Valoración física, mental y social del trabajador, elaboración de sistema de riesgos en empresas",
+        "imagen": "../imagenes/salud-ocupacional.jpg"
+    },
+    {
+        "nombre": "Cirugía",
+        "servicios": "Diagnóstico y cuidado pre-operatorio, operatorio y post-operatorio, cirugía de vesícula biliar, cirugía de hernias",
+        "imagen": "../imagenes/cirugia.jpg"
+    },
+    {
+        "nombre": "Odontología",
+        "servicios": "Odontología general e infantil, Rayos X, Ortopedia, Cirugía, y Endodoncia, Ortodoncia, Peridoncia",
+        "imagen": "../imagenes/odontologia.jpg"
+    },
+    {
+        "nombre": "Radiología",
+        "servicios": "Rayos X de Craneo, Tórax, Abdominal, Extremidades, Panorámicas ",
+        "imagen": "../imagenes/radiologia.jpg"
+    },
+    {
+        "nombre": "Ecografía",
+        "servicios": "Ecografía abdominal , Pélvico, Obstétrico, Genético I y II, Partes blandas, Prostático, Tiroideo, Ecosonograma doppler arterial y venoso de miembros inferiores.",
+        "imagen": "../imagenes/ecografia.jpg"
+    },
+    {
+        "nombre": "Laboratorio",
+        "servicios": "Laboratorios de rutina, Perfil 20, Pruebas especiales, Cultivos y antibiogramas ",
+        "imagen": "../imagenes/laboratorio.jpg"
+    }
+]

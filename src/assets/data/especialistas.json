@@ -1,0 +1,147 @@
+[
+    {
+        "especialidad": "Medicina General",
+        "nombre": "Dra. Estefanía Zamora",
+        "horario": "Lunes a Viernes de 8am-1pm"
+    },
+    {
+        "especialidad": "Medicina General",
+        "nombre": "Dr. Angel Arriechi",
+        "horario": "Sábado de 8am-2pm"
+    },
+    {
+        "especialidad": "Medicina Interna",
+        "nombre": "Dra. Tatiana Benitez",
+        "horario": "Previa Cita"
+    },
+    {
+        "especialidad": "Pediatría",
+        "nombre": "Dra. Giormar Piermattei",
+        "horario": "Previa Cita"
+    },
+    {
+        "especialidad": "Psiquiatría",
+        "nombre": "Dra. Yoanka Rodríguez",
+        "horario": "Jueves de 9am-1pm"
+    },
+    {
+        "especialidad": "Neurología",
+        "nombre": "Dr. Victor Carvajal",
+        "horario": "Lunes y Martes de 9am-1pm"
+    },
+    {
+        "especialidad": "Ginecología y Obstetricia",
+        "nombre": "Dra. Violeta Suárez",
+        "horario": "Lunes y Jueves de 8am-12pm"
+    },
+    {
+        "especialidad": "Psicología",
+        "nombre": "Lic. Merviany Pulido",
+        "horario": "Martes Previa Cita"
+    },
+    {
+        "especialidad": "Dermatología",
+        "nombre": "Dra. Maria Cecilia",
+        "horario": "Miércoles Previa Cita"
+    },
+    {
+        "especialidad": "Gastroenterología",
+        "nombre": "Dr. Antonio Zapata",
+        "horario": "Previa Cita"
+    },
+    {
+        "especialidad": "Traumatología",
+        "nombre": "Dr. Lord Arias",
+        "horario": "Lunes Previa Cita"
+    },
+    {
+        "especialidad": "Cardiología",
+        "nombre": "Dr. Joaquín Crespo",
+        "horario": "Viernes de 8am-1pm"
+    },
+    {
+        "especialidad": "Nutrición",
+        "nombre": "Dra. Bárbara Soto",
+        "horario": "Miércoles Previa Cita"
+    },
+    {
+        "especialidad": "Nefrología",
+        "nombre": "Dr. Alexander Delgado",
+        "horario": "Miércoles Previa Cita"
+    },
+    {
+        "especialidad": "Estética",
+        "nombre": "Lic. Iris Herrera",
+        "horario": "Lunes a Sábado Previa Cita"
+    },
+    {
+        "especialidad": "Oftalmología",
+        "nombre": "Dr. José Zapata",
+        "horario": "Sábado Previa Cita"
+    },
+    {
+        "especialidad": "Mastología",
+        "nombre": "Dr. Edgar Guzmán",
+        "horario": "Jueves Previa Cita"
+    },
+    {
+        "especialidad": "Salud Ocupacional",
+        "nombre": "Dr. Alexis Acosta",
+        "horario": "Previa Cita"
+    },
+    {
+        "especialidad": "Cirugía",
+        "nombre": "Dra. Lorelkys Sanchez",
+        "horario": "Viernes Previa Cita"
+    },
+    {
+        "especialidad": "Odontología",
+        "nombre": "Od. Elibert González",
+        "horario": "Lunes a Sábado de 8am-1pm"
+    },
+    {
+        "especialidad": "Odontología",
+        "nombre": "Od. María Gabriela Ortega",
+        "horario": "Lunes de 8am-12pm"
+    },
+    {
+        "especialidad": "Odontología",
+        "nombre": "Od. Nancy Espinosa",
+        "horario": "Martes de 8am-12pm"
+    },
+    {
+        "especialidad": "Odontología",
+        "nombre": "Od. Nadia Miró",
+        "horario": "Miércoles de 8am-12pm"
+    },
+    {
+        "especialidad": "Odontología",
+        "nombre": "Od. Teresa Aguirre",
+        "horario": "Miércoles Previa Cita"
+    },
+    {
+        "especialidad": "Odontología",
+        "nombre": "Od. Elvira Moreno",
+        "horario": "Jueves y Viernes de 8am-12pm"
+    },
+    {
+        "especialidad": "Radiología",
+        "nombre": "Dr. Alberto Montilla",
+        "horario": "Lunes a Sábado de 8am-1pm"
+    },
+    {
+        "especialidad": "Ecografía",
+        "nombre": "Dra. Ivón Díaz",
+        "horario": "Lunes a Sábado de 8am-1pm"
+    },
+    {
+        "especialidad": "Ecografía",
+        "nombre": "Dr. Angel Arriechi",
+        "horario": "Lunes a Sábado de 8am-1pm"
+    },
+    {
+        "especialidad": "Laboratorio",
+        "nombre": "Lic. Airais Parra - Aux. Lab. Lenys Useche",
+        "horario": "Lunes a Sábado de 8am-1pm"
+    }
+]
