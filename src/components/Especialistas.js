@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
-import especialistas from '../data/especialistas';
-import especialidades from '../data/especialidades';
+// import especialistas from '../data/especialistas';
+// import especialidades from '../data/especialidades';
 
-const Especialistas = () => {
+const Especialistas = ({ especialidades, especialistas }) => {
 
     const [especialidad, setEspecialidad] = useState('');
     const [nombre, setNombre] = useState('');
@@ -21,9 +21,7 @@ const Especialistas = () => {
                 <div className="col-md-6 col-12 p-2">
                     <select className="form-control" onChange={(e) => setEspecialidad(e.target.value.toLowerCase())}>
                         <option value="">Filtrar por Especialidad</option>
-                        {especialidades.sort(function (a, b) {
-                            return a.nombre.localeCompare(b.nombre);
-                        }).map((especialidad, index) => (
+                        {especialidades.map((especialidad, index) => (
                             <option key={index} value={especialidad.nombre}>{especialidad.nombre}</option>
                         ))}
                     </select>

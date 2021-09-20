@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import especialidades from '../data/especialidades';
+// import especialidades from '../data/especialidades';
 import { Card, Button, Modal } from 'react-bootstrap'
 
-const Especialidades = () => {
+const Especialidades = ({ especialidades }) => {
 
     const [modalContenido, setModalContenido] = useState({ titulo: '', descripcion: '' });
 

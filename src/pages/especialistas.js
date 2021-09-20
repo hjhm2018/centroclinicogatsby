@@ -1,30 +1,35 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from "gatsby"
+import Especialistas from '../components/Especialistas'
 
 const especialistas = ({ data }) => {
 
-  console.log(data);
+  const especialidades = data.especialidades.nodes;
+  const especialistas = data.especialistas.nodes;
 
   return (
     <Layout>
-      Especialistas
+      <Especialistas especialidades={especialidades} especialistas={especialistas} />
     </Layout>
   )
 }
 
 export const query = graphql`
   {
-  especialistas: allEspecialistasJson(sort: {fields: especialidad, order: ASC}) {
+  especialidades: allEspecialidadesJson(sort: {fields: nombre, order: ASC}) {
     nodes {
-      id
-      especialidad
-      horario
       nombre
     }
   }
+  especialistas: allEspecialistasJson(sort: {fields: especialidad, order: ASC}) {
+    nodes {
+      nombre
+      especialidad
+      horario
+    }
+  }
 }
-
 `
 
 export default especialistas

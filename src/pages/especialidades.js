@@ -1,13 +1,15 @@
 import React from "react"
 import Layout from '../components/Layout'
 import { graphql } from "gatsby"
+import Especialidades from '../components/Especialidades'
 
 const especialidades = ({ data }) => {
 
   console.log(data);
+  const especialidades = data.especialidades.nodes;
   return (
     <Layout>
-      Especialidades
+      <Especialidades especialidades={especialidades} />
     </Layout>
   )
 }
