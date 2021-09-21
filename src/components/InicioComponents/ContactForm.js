@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-
 
 const ContactForm = () => {
     const [nombre, setNombre] = useState('');
     const [correo, setCorreo] = useState('');
     const [mensaje, setMensaje] = useState('');
-
-    const location = useLocation();
 
     return (
         <>
@@ -27,14 +23,6 @@ const ContactForm = () => {
                             <label htmlFor="nombre">Nombre</label>
                             <input type="text" className="form-control" id="nombre" required autoComplete="off" onChange={(e) => setNombre(e.target.value.trim())} />
                         </div>
-                        {/* Debido a un bug debo colocar este container aquí en la página de inicio */}
-                        {
-                            location.pathname === '/' && (
-                                <>
-                                    <div id="ubicacion"></div>
-                                </>
-                            )
-                        }
                         <div className="form-group">
                             <label htmlFor="mensaje">Mensaje</label>
                             <textarea className="form-control" id="mensaje" rows="3" required onChange={(e) => setMensaje(e.target.value.trim())}></textarea>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import especialidades from '../data/especialidades';
 import { Card, Button, Modal } from 'react-bootstrap'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
@@ -16,7 +15,6 @@ const Especialidades = ({ especialidades }) => {
     };
 
     const [especialidadNombre, setEspecialidadNombre] = useState('');
-
 
     return (
         <div>
@@ -37,8 +35,7 @@ const Especialidades = ({ especialidades }) => {
             <div className="col-lg-10  mx-auto d-flex justify-content-center flex-wrap">
                 {especialidades && especialidades.filter(respuesta => respuesta.nombre.toLowerCase().includes(especialidadNombre)).map((especialidad, index) => (
                     <Card style={{ width: '18rem' }} className="text-center m-2" key={index}>
-                        {/* <Card.Img variant="top" src={especialidad.imagen} height={200} /> */}
-                        <GatsbyImage image={getImage(especialidad.imagen.childImageSharp.gatsbyImageData)} alt="foto" height={200} />
+                        <GatsbyImage image={getImage(especialidad.imagen.childImageSharp.gatsbyImageData)} alt={`foto-${especialidad.nombre}`} />
                         <Card.Body>
                             <Card.Title>{especialidad.nombre}</Card.Title>
                             <Button variant="primary" onClick={() => handleShow(`${especialidad.nombre}`, `${especialidad.servicios}`)}>

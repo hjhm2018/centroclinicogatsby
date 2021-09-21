@@ -1,6 +1,38 @@
 import React from "react"
 import Layout from '../components/Layout'
+import Carousel from '../components/InicioComponents/Carousel'
+import Nosotros from '../components/InicioComponents/Nosotros'
+import ContactForm from '../components/InicioComponents/ContactForm'
+import Ubicacion from '../components/InicioComponents/Ubicacion'
+import { graphql } from "gatsby"
 
-export default function Home() {
-  return <Layout>Hello world!</Layout>
+export default function Home({ data }) {
+
+  const galeria = data.galeria.nodes;
+
+  return <Layout>
+    <Carousel galeria={galeria} />
+    <Nosotros />
+    <ContactForm />
+    <Ubicacion />
+  </Layout>
 }
+
+export const query = graphql`
+  {
+  galeria: allEspecialidadesJson(sort: {fields: nombre, order: ASC}) {
+    nodes {
+      nombre
+      servicios
+      imagen {
+        childImageSharp {
+          gatsbyImageData(layout: FIXED, placeholder: BLURRED, height: 500)
+        }
+        childrenImageSharp {
+          gatsbyImageData(layout: FIXED, placeholder: BLURRED, height: 300)
+        }
+      }
+    }
+  }
+}
+`

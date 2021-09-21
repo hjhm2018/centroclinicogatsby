@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaInstagram } from "react-icons/fa";
-// import imagen from '../imagenes/logo.png'
 import { Link } from 'gatsby'
 import { Nav } from 'react-bootstrap';
+import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
 
@@ -12,12 +12,17 @@ const Footer = () => {
                 <div className=" d-flex flex-wrap justify-content-around col-12 col-md-6 pt-2">
                     <div className="col-12 col-md-8 col-lg-6">
                         <Link className="navbar-brand" to='/'>
-                            {/* <img src={imagen} width="200" height="auto" className="d-inline-block align-top"
-                                alt="logo" /> */}
+                            <StaticImage
+                                src="../assets/imagenes/logo.png"
+                                className="d-inline-block align-top"
+                                alt="Logo"
+                                placeholder="blurred"
+                                layout="fixed"
+                                width={250}
+                            />
                         </Link>
                     </div>
                     <div className="col-12 col-md-8 col-lg-6 pl-md-5 pl-0">
-
                         <Nav.Link as={Link} to='/' className="d-block text-white font-weight-bold pb-3" >Inicio</Nav.Link>
                         <Nav.Link eventKey={2} as={Link} to='/nosotros' className="d-block text-white font-weight-bold pb-3">Nosotros</Nav.Link>
                         <Nav.Link as={Link} to='/especialidades' className="d-block text-white font-weight-bold pb-3"

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-// import { useLocation } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { StaticImage } from "gatsby-plugin-image"
 
 import { useMediaQuery } from 'react-responsive';
 
@@ -12,7 +12,6 @@ const Navigationbar = () => {
 
     const url = window.location.pathname;
 
-    // const location = useLocation();
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const isNotMobile = useMediaQuery({ minWidth: 768 });
 
@@ -21,6 +20,13 @@ const Navigationbar = () => {
             <Navbar collapseOnSelect expand='lg' bg="light" variant="light" sticky="top">
                 <Navbar.Brand as={Link} to='/'>
                     {/* <img src={Logo} alt="Logo" width="200" height="auto" /> */}
+                    <StaticImage
+                        src="../assets/imagenes/logo.png"
+                        alt="Logo"
+                        placeholder="blurred"
+                        layout="fixed"
+                        width={250}
+                    />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

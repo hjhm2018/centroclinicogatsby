@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
-// import especialistas from '../data/especialistas';
-// import especialidades from '../data/especialidades';
 
 const Especialistas = ({ especialidades, especialistas }) => {
 
@@ -32,11 +30,7 @@ const Especialistas = ({ especialidades, especialistas }) => {
 
                     (nombre && !especialista.nombre.toLowerCase().includes(nombre)) ? false : (especialidad && especialista.especialidad.toLowerCase() !== especialidad) ? false : true
 
-                    // (searchWord && !person.firstName.toLowerCase().includes(searchWord)) ? false : (searchTag && person.tags.indexOf(searchTag) === -1) ? false : true
-
-                ).sort(function (a, b) {
-                    return a.especialidad.localeCompare(b.especialidad);
-                }).map(((especialista, index) => (
+                ).map(((especialista, index) => (
                     <Card className="text-center m-2" style={{ width: '18rem' }} key={index}>
                         <Card.Body>
                             <Card.Title>{especialista.nombre}</Card.Title>
