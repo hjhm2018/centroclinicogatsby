@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import especialidades from '../data/especialidades';
 import { Card, Button, Modal } from 'react-bootstrap'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const Especialidades = ({ especialidades }) => {
 
@@ -23,9 +24,7 @@ const Especialidades = ({ especialidades }) => {
                 <h2 className="text-center bg-info text-white rounded p-2">Especialidades</h2>
             </div>
             <div className="d-none d-md-block mx-auto col-10 text-center mb-2">
-                {especialidades && especialidades.sort(function (a, b) {
-                    return a.nombre.localeCompare(b.nombre);
-                }).map((especialidad, index) => (
+                {especialidades && especialidades.map((especialidad, index) => (
                     index % 2 === 0 ?
                         <span class="badge badge-info m-1" role="button" onClick={() => setEspecialidadNombre(`${especialidad.nombre.toLowerCase()}`)}>#{especialidad.nombre}</span> :
                         <span class="badge badge-secondary m-1" role="button" onClick={() => setEspecialidadNombre(`${especialidad.nombre.toLowerCase()}`)}>#{especialidad.nombre}</span>
@@ -36,11 +35,10 @@ const Especialidades = ({ especialidades }) => {
                     placeholder="Filtrar por especialidad" />
             </div>
             <div className="col-lg-10  mx-auto d-flex justify-content-center flex-wrap">
-                {especialidades && especialidades.filter(respuesta => respuesta.nombre.toLowerCase().includes(especialidadNombre)).sort(function (a, b) {
-                    return a.nombre.localeCompare(b.nombre);
-                }).map((especialidad, index) => (
+                {especialidades && especialidades.filter(respuesta => respuesta.nombre.toLowerCase().includes(especialidadNombre)).map((especialidad, index) => (
                     <Card style={{ width: '18rem' }} className="text-center m-2" key={index}>
-                        <Card.Img variant="top" src={especialidad.imagen} height={200} />
+                        {/* <Card.Img variant="top" src={especialidad.imagen} height={200} /> */}
+                        <GatsbyImage image={getImage(especialidad.imagen.childImageSharp.gatsbyImageData)} alt="foto" height={200} />
                         <Card.Body>
                             <Card.Title>{especialidad.nombre}</Card.Title>
                             <Button variant="primary" onClick={() => handleShow(`${especialidad.nombre}`, `${especialidad.servicios}`)}>

@@ -5,7 +5,6 @@ import Especialidades from '../components/Especialidades'
 
 const especialidades = ({ data }) => {
 
-  console.log(data);
   const especialidades = data.especialidades.nodes;
   return (
     <Layout>
@@ -16,16 +15,15 @@ const especialidades = ({ data }) => {
 
 export const query = graphql`
   {
-  especialidades: allEspecialidadesJson {
+  especialidades: allEspecialidadesJson(sort: {fields: nombre, order: ASC}) {
     nodes {
-      imagen {
-        childImageSharp {
-          gatsbyImageData
-        }
-      }
-      id
       nombre
       servicios
+      imagen {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, , height: 200)
+        }
+      }
     }
   }
 }
