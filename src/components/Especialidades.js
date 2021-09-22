@@ -24,8 +24,8 @@ const Especialidades = ({ especialidades }) => {
             <div className="d-none d-md-block mx-auto col-10 text-center mb-2">
                 {especialidades && especialidades.map((especialidad, index) => (
                     index % 2 === 0 ?
-                        <span class="badge badge-info m-1" role="button" onClick={() => setEspecialidadNombre(`${especialidad.nombre.toLowerCase()}`)}>#{especialidad.nombre}</span> :
-                        <span class="badge badge-secondary m-1" role="button" onClick={() => setEspecialidadNombre(`${especialidad.nombre.toLowerCase()}`)}>#{especialidad.nombre}</span>
+                        <button class="badge badge-info m-1 border-info" onClick={() => setEspecialidadNombre(`${especialidad.nombre.toLowerCase()}`)}>#{especialidad.nombre}</button> :
+                        <button class="badge badge-secondary m-1 border-secondary" onClick={() => setEspecialidadNombre(`${especialidad.nombre.toLowerCase()}`)}>#{especialidad.nombre}</button>
                 ))}
             </div>
             <div className="text-center mx-auto col-10">
