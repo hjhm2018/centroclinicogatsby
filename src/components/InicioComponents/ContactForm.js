@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaMailBulk } from "react-icons/fa";
 
 const ContactForm = () => {
     const [nombre, setNombre] = useState('');
@@ -7,10 +8,12 @@ const ContactForm = () => {
 
     return (
         <>
-            <div className="mt-1">
-                <div className="col-12 col-md-10 col-lg-6 mx-auto">
-                    <h3 className="text-center p-2 m-0">Contacto</h3>
+            <div className="row mt-1">
+                <div className="col-12">
+                    <h2 className="text-center p-2 m-0 bg-info text-white rounded">Contacto <FaMailBulk /></h2>
+                </div>
 
+                <div className="col-12 col-md-10 col-lg-6 mt-3 mx-auto">
                     <form id="formulario" className="bg-dark text-white p-5 rounded">
                         <div className="form-group">
                             <label htmlFor="correo">Email</label>

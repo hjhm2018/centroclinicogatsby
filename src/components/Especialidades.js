@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Card, Button, Modal } from 'react-bootstrap'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { Card, Button, Modal } from 'react-bootstrap';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { FaMedkit } from "react-icons/fa";
 
 const Especialidades = ({ especialidades }) => {
 
@@ -19,7 +20,7 @@ const Especialidades = ({ especialidades }) => {
     return (
         <div>
             <div className="col-12">
-                <h2 className="text-center bg-info text-white rounded p-2">Especialidades</h2>
+                <h2 className="text-center bg-info text-white rounded p-2">Especialidades <FaMedkit /></h2>
             </div>
             <div className="d-none d-md-block mx-auto col-10 text-center mb-2">
                 {especialidades && especialidades.map((especialidad, index) => (
