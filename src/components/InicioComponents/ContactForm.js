@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaMailBulk } from "react-icons/fa";
+import { FaMailBulk, FaPaperPlane } from "react-icons/fa";
 
 const ContactForm = () => {
     const [nombre, setNombre] = useState('');
@@ -31,7 +31,7 @@ const ContactForm = () => {
                             <textarea className="form-control" id="mensaje" rows="3" required onChange={(e) => setMensaje(e.target.value.trim())}></textarea>
                         </div>
                         <div className="text-right">
-                            <button type="submit" className="btn btn-primary" disabled={nombre.trim() === '' || correo.trim() === '' || mensaje.trim() === ''}>Enviar</button>
+                            <button type="submit" className="btn btn-primary" disabled={nombre.trim() === '' || correo.trim() === '' || mensaje.trim() === ''}>Enviar <FaPaperPlane /></button>
                         </div>
                     </form>
                 </div>
