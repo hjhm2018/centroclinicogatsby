@@ -2,12 +2,17 @@ import React from "react"
 import Layout from '../components/Layout'
 import { graphql } from "gatsby"
 import Especialidades from '../components/Especialidades'
+import { Helmet } from "react-helmet"
 
 const especialidades = ({ data }) => {
 
   const especialidades = data.especialidades.nodes;
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Especialidades</title>
+      </Helmet>
       <Especialidades especialidades={especialidades} />
     </Layout>
   )

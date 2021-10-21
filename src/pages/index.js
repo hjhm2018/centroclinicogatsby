@@ -5,12 +5,17 @@ import Nosotros from '../components/InicioComponents/Nosotros'
 import ContactForm from '../components/InicioComponents/ContactForm'
 import Ubicacion from '../components/InicioComponents/Ubicacion'
 import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 export default function Home({ data }) {
 
   const galeria = data.galeria.nodes;
 
   return <Layout>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Inicio</title>
+    </Helmet>
     <Carousel galeria={galeria} />
     <Nosotros />
     <ContactForm />

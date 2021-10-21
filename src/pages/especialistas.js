@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from "gatsby"
 import Especialistas from '../components/Especialistas'
+import { Helmet } from "react-helmet"
 
 const especialistas = ({ data }) => {
 
@@ -10,6 +11,10 @@ const especialistas = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Especialistas</title>
+      </Helmet>
       <Especialistas especialidades={especialidades} especialistas={especialistas} />
     </Layout>
   )
